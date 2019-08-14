@@ -40,7 +40,7 @@ class App extends React.Component {
         }
         const start = this.state.columns[source.droppableId];
         const finish = this.state.columns[destination.droppableId];
-        if (start == finish) {
+        if (start === finish) {
             const newTaskIds = Array.from(start.taskIds);
             newTaskIds.splice(source.index, 1);
             newTaskIds.splice(destination.index, 0, draggableId);
